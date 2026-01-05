@@ -18,7 +18,7 @@ const handleNav = () => {
     };
 
   return (
-    <div className='navbar'>
+    <div className="fixed w-full h-[80px] bg-slate-900 text-white z-50">
         <div className='nav-content'>
             <div className='logo'> Mi Portfolio </div>
             <ul className='nav-links'>
