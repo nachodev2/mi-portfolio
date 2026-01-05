@@ -18,12 +18,15 @@ const handleNav = () => {
     };
 
   return (
-    <div className="fixed w-full h-[80px] bg-slate-900 text-white z-50">
-        <div className='nav-content'>
-            <div className='logo'> Mi Portfolio </div>
-            <ul className='nav-links'>
+    <div className="fixed w-full h-[80px] bg-primary text-white z-50">
+        <div className="max-w-screen-xl mx-auto flex justify-between items-center h-full px-4">
+            <div className="flex items-center gap-3 cursor-pointer">
+                <img src="/carga-circular.svg" alt="Logo Carga Circular." className='w-12 h-12 object-cover'/>
+                <h1 className='text-4xl font-bold text-text-main font-signature'> Tomás Ruiz </h1>
+            </div>
+            <ul className='hidden md:flex'>
                 {links.map(({id, link}) => (
-                    <li key={id} className='nav-link'>
+                    <li key={id} className='px-4 cursor-pointer capitalize font-medium text-gray-400 hover:scale-105 hover:text-white duration-200'>
                         <Link to={link} smooth duration={500}>
                             {link}
                         </Link>
