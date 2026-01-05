@@ -7,14 +7,21 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary': '#000039',    // Azul oscuro (Fondo)
-        'secondary': '#3E3E53',  // Gris azulado
-        'tertiary': '#7C7B6C',   // Gris verdoso
-        'accent': '#F8F69F',     // Amarillo neón (Destacados)
-        'sage': '#BAB986',       // Beige
-        'text-main': '#e2e8f0',  // Blanco suave (Texto)
-        'accent-hover': '#d4d265', // Amarillo oscuro (Hover)
-        'error': '#ef4444',      // Rojo
+        // Lienzo
+        'primary': '#121212',
+        // Color main
+        'accent': '#FFB703',
+        // Textos
+        'text-main': '#A8A29E',
+        'text-light': '#FFFFFF',
+      },
+      boxShadow: {
+        'neon': '0 0 10px rgba(255, 183, 3, 0.5)',
+      },
+      fontFamily: {
+        signature: ['Atkinson Hyperlegible Mono', 'monospace'],
+        main: ['Outfit', 'sans-serif'],
+        mono: ['Space Mono', 'monospace'],
       },
     },
   },
