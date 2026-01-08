@@ -11,6 +11,7 @@ export default {
         'primary': '#121212',
         // Color main
         'accent': '#FFB703',
+        'accent-dark': '#CC9302',
         // Textos
         'text-main': '#A8A29E',
         'text-light': '#FFFFFF',
