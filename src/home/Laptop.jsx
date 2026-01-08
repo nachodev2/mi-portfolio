@@ -1,5 +1,5 @@
 import { Canvas, useThree } from '@react-three/fiber';
-import { OrbitControls, useGLTF, Environment } from '@react-three/drei';
+import { OrbitControls, useGLTF, Environment, Float, Text } from '@react-three/drei';
 import { Suspense, useState, useEffect } from 'react';
 
 function Model() {
@@ -20,20 +20,24 @@ function SceneReady({ onReady }) {
   
   return null;
 }
+
 export default function Laptop() {
   const [showCanvas, setShowCanvas] = useState(false);
   const handleReady = () => {
     setShowCanvas(true);
   };
+
   return (
     <div 
       className="w-full h-[400px] md:h-[600px] relative"
-      style={{ backgroundColor: '#121212' }} 
+      // 1. ¡IMPORTANTE! Quitamos el backgroundColor para que sea transparente
+      // style={{ backgroundColor: '#121212' }} 
     >
       {!showCanvas && (
         <div 
           className="absolute inset-0 flex items-center justify-center z-20"
-          style={{ backgroundColor: '#121212' }}
+          // 2. También quitamos el fondo del preloader por si acaso
+          // style={{ backgroundColor: '#121212' }}
         >
           <div className="w-12 h-12 border-4 border-accent border-t-transparent rounded-full animate-spin"></div>
         </div>
@@ -49,19 +53,24 @@ export default function Laptop() {
         <Canvas 
           camera={{ position: [0, 2, 10], fov: 40 }}
           gl={{ 
-            alpha: false,
+            alpha: true, // 3. ¡IMPORTANTE! alpha: true permite la transparencia en el Canvas
             antialias: true,
             powerPreference: "high-performance"
           }}
-          style={{ background: '#121212' }}
+          // 4. Quitamos el background del estilo del Canvas
+          // style={{ background: '#121212' }}
           dpr={[1, 2]}
         >
-          <color attach="background" args={['#121212']} />
+          {/* 5. Quitamos el color de fondo de la escena 3D */}
+          {/* <color attach="background" args={['#121212']} /> */}
+          
           <ambientLight intensity={1} />
           <directionalLight position={[5, 10, 5]} intensity={2} />
+          
           <Suspense fallback={null}>
             <Model />
           </Suspense>
+
           <OrbitControls 
             enableZoom={false} 
             minPolarAngle={Math.PI / 2} 
