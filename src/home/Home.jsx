@@ -4,6 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 import './Home.css'
 import './Laptop.jsx'
 import Laptop from './Laptop.jsx';
+import TechStack from './TechStack.jsx';
 
 
 
@@ -43,6 +44,9 @@ export default function Home() {
             className='h-full w-full flex items-center justify-center relative z-10'style={{background: 'radial-gradient(circle at center, #FFB70340 0%, transparent 70%)'}}>
                 <Laptop />
             </div>
+        </div>
+        <div>
+            <TechStack />
         </div>
     </section>
   )
