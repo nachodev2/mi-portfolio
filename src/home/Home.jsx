@@ -45,9 +45,6 @@ export default function Home() {
                 <Laptop />
             </div>
         </div>
-        <div>
-            <TechStack />
-        </div>
     </section>
   )
 }
