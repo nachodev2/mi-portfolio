@@ -25,9 +25,9 @@ export default function Home() {
                 <h2 className='font-bold text-7xl text-white  pl-64 translate-y-6'>
                     <TypeAnimation
                     sequence={[
-                        'Software Developer',
+                        'Software Dev',
                         1000,
-                        'FullStack Developer',
+                        'FullStack Dev',
                         1000
                     ]}
                     wrapper="span"
