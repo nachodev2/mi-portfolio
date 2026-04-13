@@ -37,7 +37,7 @@ export default function Home() {
                 </h2>
                 <div className='flex pl-64 translate-y-24'>
                     <Link to="contact" smooth={true} duration={500} className='bg-accent text-black font-bold group-hover:rotate-90 px-6 py-2 cursor-pointer hover:scale-105 hover:bg-accent-dark hover:text-white'>Got a Project?</Link>
-                    <a href='#' target='_blank' rel='noopener noreferrer' className='bg-primary text-white font-bold group-hover:rotate-90 px-6 py-2 ml-8 border border-accent hover:scale-105 hover:text-accent'>My resume</a>
+                    <a href='/tomas-ruiz-resume.pdf' target='_blank' rel='noopener noreferrer' className='bg-primary text-white font-bold group-hover:rotate-90 px-6 py-2 ml-8 border border-accent hover:scale-105 hover:text-accent'>My resume</a>
                 </div>
             </div>
             <div 
