@@ -66,7 +66,8 @@ const AboutMe = () => {
     <section id="about" className="w-full bg-[#121212] py-32 relative">
       <div className="max-w-7xl mx-auto px-6 md:px-20 lg:px-40 flex flex-col items-center">
         
-        <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-24 w-full mb-32">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-40 w-full mb-32">
+          
           <div className="relative w-80 h-80 md:w-[400px] md:h-[400px] rounded-3xl overflow-hidden shrink-0 border-4 border-dotted border-[#FFB703] shadow-[0_0_10px_rgba(255,183,3,0.5)] transition-all duration-300 hover:scale-[1.02]">
             <img 
               src="/tomas-ruiz.png" 
@@ -74,6 +75,7 @@ const AboutMe = () => {
               className="w-full h-full object-cover" 
             />
           </div>
+
           <div className="flex flex-col gap-8 text-center lg:text-left w-full">
             <div className="flex justify-center lg:justify-start">
               <h2 className="text-5xl md:text-6xl font-bold text-white mb-2 tracking-tight">
